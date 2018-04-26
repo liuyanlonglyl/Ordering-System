@@ -1,0 +1,135 @@
+/*body background style*/
+.body{
+	background-color:#1c77ac; 
+	overflow:hidden;
+}
+
+
+#login_cloud{
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:-1;
+}
+.cloud {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:url(../img/cloud.png)lno-repeat;
+	z-index:1;
+	opacity:0.5;
+}
+
+/* login */
+.login_top{
+	height:47px; 
+	position:absolute; 
+	top:0; 
+	z-index:100; 
+	width:100%;
+	background: url(../img/login_top.png);
+}
+.login_top span{
+	color:#fff; 
+	line-height:47px; 
+	background:url(../img/login_trangle.png) no-repeat 21px 18px; 
+	text-indent:44px; 
+	color:#afc5d2; 
+	float:left;
+}
+.login_top ul{
+	float:right; 
+	padding-right:30px;
+}
+.login_top ul li{
+	float:left; 
+	margin-left:20px; 
+	line-height:47px;
+}
+.login_top ul li a{
+	color:#afc5d2;
+}
+.login_top ul li a:hover{
+	color:#fff;
+}
+
+.login_main{
+	background:url(../img/login_bg.png) no-repeat center center; 
+	width:100%; 
+	height:585px; 
+	overflow:hidden; 
+	position:absolute; 
+	top:180px;
+}
+
+
+
+.login_content{
+	width:692px; 
+	height:336px; 
+	background:url(../img/login_info.png) no-repeat; 
+	margin-top:30px;
+}
+.login_content ul{
+	margin-top:88px; 
+	margin-left:285px;
+}
+.login_content ul li{
+	margin-bottom:25px;
+}
+.login_content ul li label{
+	color:#687f92; 
+	padding-left:25px;
+}
+.login_content ul li label a{
+	color:#687f92;
+}
+.login_content ul li label a:hover{
+	color:#3d96c9;
+}
+.login_content ul li label input{
+	margin-right:5px;
+}
+.login_content ul li input::-webkit-input-placeholder {
+        /* placeholder颜色  */
+        color: #B89E8F;
+        /* placeholder字体大小  */
+        font-size: 12px;
+}
+
+.login_user{
+	width:299px; 
+	height:48px; 
+	background:url(../img/login_user.png) no-repeat; 
+	border:none; 
+	line-height:48px; 
+	padding-left:44px; 
+	font-size:14px; 
+	font-weight:bold;
+	color:orange;
+}
+
+.login_pwd{
+	width:299px; 
+	height:48px; 
+	background:url(../img/login_pwd.png) no-repeat; 
+	border:none;
+	line-height:48px; 
+	padding-left:44px; 
+	font-size:14px; 
+	color:#90a2bc;
+}
+
+.login_btn{
+	width:80px;
+	height:35px; 
+	background:url(../img/btn_bg.png) repeat-x; 
+	font-size:14px; 
+	font-weight:bold; 
+	color:#fff;
+	cursor:pointer; 
+	line-height:35px;
+}
+

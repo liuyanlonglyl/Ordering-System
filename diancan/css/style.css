@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@-webkit-keyframes flipOutYtest {
+  from {
+    -webkit-transform: perspective(1400px);
+    transform: perspective(1400px);
+  }
+
+  40% {
+    -webkit-transform: perspective(1400px) rotate3d(0, 1, 0, 60deg);
+    transform: perspective(1400px) rotate3d(0, 1, 0, 60deg);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: perspective(1400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(1400px) rotate3d(0, 1, 0, 90deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: perspective(1400px) rotate3d(0, 1, 0, 180deg);
+    transform: perspective(1400px) rotate3d(0, 1, 0, 180deg);
+    opacity: 0;
+  }
+}
+
+.test{
+  -webkit-animation: flipOutYtest 0.75s linear;
+  animation: flipOutYtest 0.75s linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes flipInYtest {
+  from {
+    -webkit-transform: perspective(1400px) rotate3d(0, 1, 0, -180deg);
+    transform: perspective(1400px) rotate3d(0, 1, 0, -180deg);
+    opacity: 0;
+  }
+
+  50% {
+    -webkit-transform: perspective(1400px) rotate3d(0, 1, 0, -90deg);
+    transform: perspective(1400px) rotate3d(0, 1, 0, -90deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: perspective(1400px) rotate3d(0, 1, 0, -60deg);
+    transform: perspective(1400px) rotate3d(0, 1, 0, -60deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: perspective(1400px);
+    transform: perspective(1400px);
+    opacity: 1;
+  }
+}
+
+.test2{
+  -webkit-animation: flipInYtest 0.75s linear;
+  animation: flipInYtest 0.75s linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+
+.well{ width: 1000px;  min-height: 250px;/*  margin: auto;
+  min-width: 1250px;
+  column-width: 250px;
+  -webkit-column-width: 250px;
+  -webkit-column-gap: 0px;
+  column-gap: 0px;*/ margin-left: auto; margin-right: auto; height: auto; }
+
+.well .well-item{ position: relative; float: left; width: 23%; min-height: 250px; margin: 1%; }
+.well .well-item img{
+  width: 100%;
+  min-height: 250px;
+}
+.correct{
+  position: absolute;
+  width: 100%;
+}
+.opposite{
+  min-height: 250px;
+  width: 100%;
+}
+.opposite div{
+  min-height: 250px;
+  width: 100%;
+}
+.opposite-content{
+  display: table;
+  width: 100%;
+  min-height: 250px;
+  background-color: #D95E22;
+}
+.opposite-content-text{ 
+	display: table-cell;
+	 vertical-align: middle; 
+	 text-align: center; 
+	 color: white; 
+	 font-size: 24px; 
+	 }
+.opposite-content-text p{
+	color:white;
+	font-size: 30px;
+	line-height: 60px;
+	font-family:sylfaen;
+}
+
+.list01 button{
+	background-color: #97100C;
+	color: white;
+	height: 20px;
+	font-size: 14pxs;
+}
+
+.list01{
+	
+	width:230px;
+	float: left;
+	background-color:#D2D2B8 ;
+	height: 20px;
+}
+.list01 dd{
+	display: inline-block;
+	margin-left: 20px;
+	color: #97100C;
+	font-size: 14px;
+}
+

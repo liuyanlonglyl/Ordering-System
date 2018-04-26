@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="../css/style.css" />
+
+<style>
+* { margin: 0; padding: 0;}
+ul { list-style-type: none;}
+body { font: 14px "Microsoft Yahei"; overflow-x: hidden; background-color: #2B2B2B; }
+h1 { width: 900px; margin: 40px auto 100px; font: 32px "Microsoft Yahei"; text-align: center; color: #D3D3D3; }
+
+
+
+</style>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
+<script>
+$(function(){
+	var $animate = $('#animate');
+	var $opposite = $('#opposite');
+	$(".wrap").hover(function(){
+		$animate.removeClass();
+		$opposite.removeClass();
+		$animate.addClass("test");
+		$opposite.addClass('test2');
+	},function(){
+		$animate.removeClass();
+		$opposite.removeClass();
+		$animate.addClass("test2");
+		$opposite.addClass('test');
+	});
+
+	$(".well-item").hover(function(){
+		$(this).find(".correct").children().removeClass();
+		$(this).find(".opposite").children().removeClass();
+		$(this).find(".correct").children().addClass("test");
+		$(this).find(".opposite").children().addClass('test2');
+	},function(){
+		$(this).find(".correct").children().removeClass();
+		$(this).find(".opposite").children().removeClass();
+		$(this).find(".correct").children().addClass("test2");
+		$(this).find(".opposite").children().addClass('test');
+	});
+
+});
+</script>
+</head>
+
+<body>
+
+<div class="well">
+	<div class="well-item">
+		<div class="correct"><img  class="" src="../images/zhongshi/北京烤鸭.jpg"/></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content">
+					<div class="opposite-content-text">
+						正宗的老北京烤鸭
+						<p>￥98元</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list01">
+			<dd>北京烤鸭</dd>
+			<dd>
+				<button class="gwButton">添加购物车</button>
+			</dd>
+		</div>
+	</div>
+	
+	<div class="well-item">
+		<div class="correct"><img  class="" src="../images/zhongshi/可乐鸡翅.jpg"/></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content">
+					<div class="opposite-content-text">
+						以鸡翅和可乐为主料，以料酒、葱、姜、酱油、盐、鸡精作为调料制作而成的美食。
+						<p>￥58元</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list01">
+			<dd>可乐鸡翅</dd>
+			<dd>
+				<button class="gwButton">添加购物车</button>
+			</dd>
+		</div>
+	</div>
+	
+	<div class="well-item">
+		<div class="correct"><img  class="" src="../images/zhongshi/宫保鸡丁.jpg"/></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content">
+					<div class="opposite-content-text">
+						选用鸡肉为主料，佐以花生米、黄瓜、辣椒等辅料烹制而成。 红而不辣、辣而不猛、香辣味浓、肉质滑脆。
+						<p>￥68元</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list01">
+			<dd>宫保鸡丁</dd>
+			<dd>
+				<button class="gwButton">添加购物车</button>
+			</dd>
+		</div>
+	</div>
+	
+	<div class="well-item">
+		<div class="correct"><img  class="" src="../images/zhongshi/梅菜扣肉.jpeg"/></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content">
+					<div class="opposite-content-text">
+						肉烂味香，吃起来咸中略带甜味，肥而不腻。
+						<p>￥48元</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list01">
+			<dd>梅菜扣肉</dd>
+			<dd>
+				<button class="gwButton">添加购物车</button>
+			</dd>
+		</div>
+	</div>
+	
+	<div class="well-item">
+		<div class="correct"><img  class="" src="../images/zhongshi/脆皮乳鸽.jpg"/></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content">
+					<div class="opposite-content-text">
+						皮脆肉嫩、色泽红亮、鲜香味美
+						<p>￥88元</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list01">
+			<dd>脆皮乳鸽</dd>
+			<dd>
+				<button class="gwButton">添加购物车</button>
+			</dd>
+		</div>
+	</div>
+	
+	<div class="well-item">
+		<div class="correct"><img  class="" src="../images/zhongshi/酸菜鱼.jpeg"/></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content">
+					<div class="opposite-content-text">
+						草鱼为主料，配以泡菜等食材煮制而成，口味酸辣可口。
+						<p>￥58元</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list01">
+			<dd>酸菜鱼</dd>
+			<dd>
+				<button class="gwButton">添加购物车</button>
+			</dd>
+		</div>
+	</div>
+	
+	<div class="well-item">
+		<div class="correct"><img  class="" src="../images/zhongshi/麻婆豆腐.jpg"/></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content">
+					<div class="opposite-content-text">
+						原料为配料和豆腐，材料主要有豆腐、牛肉末、辣椒和花椒等。
+						<p>￥48元</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list01">
+			<dd>麻婆豆腐</dd>
+			<dd>
+				<button class="gwButton">添加购物车</button>
+			</dd>
+		</div>
+	</div>
+	
+	<div class="well-item">
+		<div class="correct"><img  class="" src="../images/zhongshi/炝拌鱿鱼.jpg"/></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content">
+					<div class="opposite-content-text">
+						鱿鱼、黄瓜、胡萝卜、生抽、白醋等
+						<p>￥38元</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list01">
+			<dd>炝拌鱿鱼</dd>
+			<dd>
+				<button class="gwButton">添加购物车</button>
+			</dd>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>

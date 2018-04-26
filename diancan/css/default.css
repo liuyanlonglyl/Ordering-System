@@ -1,0 +1,45 @@
+*{
+	font-size:9pt;
+	border:0;
+	margin:0;
+	padding:0;
+}
+body{
+	margin:0 auto;
+	min-width:980px;
+}
+ul{
+	margin:0;
+	padding:0;
+	display:block;
+	list-style:none;
+}
+li{
+	margin:0;
+	padding:0;
+	display:block;
+	list-style: none;
+}
+img{
+	border:0;
+}
+dl,dt,dd,span{
+	margin:0;
+	padding:0;
+	display:block;
+}
+
+a{
+	text-decoration:none;
+	color:#000;
+}
+a:hover{
+	color:#BF3330;
+	text-decoration:none;
+}
+table{
+	border-collapse:collapse;
+	border-spacing: 0;
+}
+
+
